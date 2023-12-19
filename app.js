@@ -29,6 +29,7 @@ app.set('view engine', 'ejs');
 connect();
 
 app.use(cors({
+  // origin: 배포 후엔 배포한 도메인 적는다. 여러 개 넣으려면 배열로
   origin: [ 'http://localhost:3000', 'https://event-moum.netlify.app/' ],
   methods: ['GET', 'POST', 'OPTIONS'],
   credentials: true
