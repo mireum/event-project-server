@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 
 const { MONGO_ID, MONGO_PASSWORD } = process.env;
 // const url = `mongodb+srv://${MONGO_ID}:${MONGO_PASSWORD}@cluster0.hqitiuj.mongodb.net/`;
-const uri = 'mongodb://localhost:27017'
+const uri = 'mongodb://localhost:27017';
 const client = new MongoClient(url);
 
 const connect = async () => {
